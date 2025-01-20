@@ -26,7 +26,7 @@ class Alimento {
 }
 
 class Fruta extends Alimento {
-  Fruta(String nome, double peso, String cor) : super(nome, peso, cor);
+  Fruta(super.nome, super.peso, super.cor);
 
   sucoFruta() {
     print('Você fez um suco de $nome');
@@ -35,8 +35,7 @@ class Fruta extends Alimento {
 
 class Legume extends Alimento {
   bool isPrecisaCozinhar;
-  Legume(String nome, double peso, String cor, this.isPrecisaCozinhar)
-    : super(nome, peso, cor);
+  Legume(super.nome, super.peso, super.cor, this.isPrecisaCozinhar);
 
   void cozinhar() {
     if (isPrecisaCozinhar) {

@@ -35,12 +35,12 @@ class Veiculo {
 
 class Carro extends Veiculo implements Veiculos {
   Carro(
-    String marca,
-    String modelo,
-    int ano,
-    int quantidadeLugares,
-    String combustivel,
-  ) : super(marca, modelo, ano, quantidadeLugares, combustivel);
+    super.marca,
+    super.modelo,
+    super.ano,
+    super.quantidadeLugares,
+    super.combustivel,
+  );
 
   @override
   mover() {
@@ -62,13 +62,13 @@ class Aviao extends Veiculo implements Veiculos {
   bool? comercial;
 
   Aviao(
-    String marca,
-    String modelo,
-    int ano,
-    int quantidadeLugares,
-    String combustivel, {
+    super.marca,
+    super.modelo,
+    super.ano,
+    super.quantidadeLugares,
+    super.combustivel, {
     this.comercial,
-  }) : super(marca, modelo, ano, quantidadeLugares, combustivel);
+  });
 
   void comercialPassageiros() {
     if (comercial == true) {
@@ -96,12 +96,12 @@ class Aviao extends Veiculo implements Veiculos {
 
 class Bicicleta extends Veiculo implements Veiculos {
   Bicicleta(
-    String marca,
-    String modelo,
-    int ano,
-    int quantidadeLugares,
-    String combustivel,
-  ) : super(marca, modelo, ano, quantidadeLugares, combustivel);
+    super.marca,
+    super.modelo,
+    super.ano,
+    super.quantidadeLugares,
+    super.combustivel,
+  );
 
   @override
   mover() {
